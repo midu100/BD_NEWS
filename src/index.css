@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+
+@utility container {
+  margin-inline: auto;
+  /* padding-inline: 2rem; */
+}
+
+
+.breaking-news {
+  background: #e60000;  /* Red background */
+  animation: blink 1.2s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
