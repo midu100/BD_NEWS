@@ -11,7 +11,6 @@ const Home = () => {
       <HeroNews />
       <LatestNews />
       <CategorySection />
-      <Footer />
     </>
   )
 }

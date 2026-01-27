@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
+import HeroLeft from "../components/common/HeroLeft";
 
 const HeroNews = () => {
   return (
@@ -7,40 +8,7 @@ const HeroNews = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-10">
 
         {/* LEFT MAIN NEWS */}
-        <div className="w-full lg:w-2/3">
-
-          {/* Category */}
-          <span className="inline-block mb-4 bg-red-700 text-white text-xs font-bold px-3 py-1 uppercase">
-            রাজনীতি
-          </span>
-
-          {/* Headline */}
-          <Link to="/news/1">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900 hover:text-red-700 transition">
-              নির্বাচন কমিশনের নতুন পদক্ষেপে রাজনৈতিক অঙ্গনে তোলপাড়
-            </h1>
-          </Link>
-
-          {/* Sub text */}
-          <p className="mt-4 text-gray-600 text-base md:text-lg leading-relaxed">
-            আসন্ন নির্বাচনকে সামনে রেখে নির্বাচন কমিশনের নতুন নীতিমালা ঘোষণা
-            করেছে। এতে বিভিন্ন রাজনৈতিক দলের মধ্যে মিশ্র প্রতিক্রিয়া দেখা দিয়েছে।
-          </p>
-
-          {/* Meta */}
-          <div className="mt-4 text-sm text-gray-500">
-            ২৭ জানুয়ারি, ২০২৬
-          </div>
-
-          {/* Image */}
-          <div className="mt-6 overflow-hidden rounded-sm">
-            <img
-              src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a620"
-              alt="Politics"
-              className="w-full h-[360px] object-cover hover:scale-105 transition duration-500"
-            />
-          </div>
-        </div>
+        <HeroLeft />
 
         {/* RIGHT SIDEBAR */}
         <aside className="w-full lg:w-1/3">
